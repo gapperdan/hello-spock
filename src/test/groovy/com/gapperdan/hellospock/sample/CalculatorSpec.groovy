@@ -15,4 +15,14 @@ class CalculatorSpec extends Specification {
 		then:
 			sum == 2					
 	}
+	
+	def "It should return 6 when calling multiply for 2 and 3"() {
+		given:
+			def calculator = new Calculator()
+		when:
+			def product = calculator.multiply(2,3)
+		then:
+			product == 6 
+	}		
+	
 }
